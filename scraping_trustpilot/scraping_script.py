@@ -70,5 +70,4 @@ dict = {'Date' : date_list, 'Location' : location_list, 'Reviewer': name_list, '
 # Turn the dictionary into a dataframe
 df = pd.DataFrame(dict)
 
-# Print the dataframe
-print(df)
+df.to_csv(r'/Users/camilleepitalon/Documents/scraping/trustpilot_esp_data.csv', index = False)
